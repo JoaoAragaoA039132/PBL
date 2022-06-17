@@ -1,0 +1,58 @@
+conf t
+vtp version 2
+vtp domain Edificio2
+vtp password Edificio2
+vtp mode client
+
+
+show vtp status
+show vtp counters
+
+
+
+
+---------------
+
+conf t
+vlan 21
+name alunos
+exit
+vlan 22
+name sistemas-auxiliares
+exit
+vlan 23
+name voip
+exit
+vlan 24
+name servicos-academicos
+exit
+vlan 25
+name conselho-gestao
+exit
+vlan 26
+name gestao
+exit
+vlan 27
+name professores
+exit
+vlan 28
+name informatica
+exit
+vlan 29
+name guest
+exit
+
+
+
+
+
+---------------
+
+interface range g0/1-2
+switchport mode trunk
+switchport nonegotiate
+
+
+--------------
+
+spanning-tree vlan 11-16 priority 8192
