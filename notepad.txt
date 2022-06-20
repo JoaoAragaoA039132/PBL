@@ -55,4 +55,10 @@ switchport nonegotiate
 
 --------------
 
-spanning-tree vlan 11-16 priority 8192
+spanning-tree vlan 21-29 priority 8192
+
+----------------- 
+
+interface range f0/5-24
+switchport mode access
+switchport access vlan 14
