@@ -59,6 +59,6 @@ spanning-tree vlan 21-29 priority 8192
 
 ----------------- 
 
-interface range f0/5-24
+interface range f0/12-22
 switchport mode access
-switchport access vlan 14
+switchport access vlan 29
