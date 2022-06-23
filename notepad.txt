@@ -78,3 +78,6 @@ copy running-config tftp:
 192.168.9.6
 
 ------------------------
+
+interface vlan 13
+ip add 192.168.1.17
