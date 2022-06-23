@@ -4,12 +4,8 @@ vtp domain Edificio2
 vtp password Edificio2
 vtp mode client
 
-
 show vtp status
 show vtp counters
-
-
-
 
 ---------------
 
@@ -42,16 +38,11 @@ vlan 29
 name guest
 exit
 
-
-
-
-
 ---------------
 
 interface range g0/1-2
 switchport mode trunk
 switchport nonegotiate
-
 
 --------------
 
@@ -78,3 +69,11 @@ copy running-config tftp:
 192.168.9.6
 
 ------------------------
+
+interface vlan 26
+ip add 192.168.3.139 255.255.255.240
+exit
+ip default-gateway 192.168.3.129
+
+copy running-config tftp: 
+192.168.9.6
