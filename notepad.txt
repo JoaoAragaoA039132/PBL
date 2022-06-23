@@ -71,3 +71,10 @@ ip helper-address 192.168.9.3
 
 interface range f0/23-24
 switchport trunk native vlan 29
+
+------------------------
+
+copy running-config tftp:
+192.168.9.6
+
+------------------------
