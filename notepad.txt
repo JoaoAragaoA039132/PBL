@@ -77,3 +77,24 @@ ip default-gateway 192.168.3.129
 
 copy running-config tftp: 
 192.168.9.6
+
+------------------------
+
+ROUTER:
+
+	enable secret class
+	line console 0
+	password cisco
+	login
+	line vty 0 4
+	password cisco
+	login
+	transport input ssh telnet
+	exit
+	service password encryption
+	banner motd #
+	Enter TEXT message. End with a new line and the #
+	*********************************************** 
+	WARNING: Unauthorized access is prohibited!
+	**********************************************
+	#
