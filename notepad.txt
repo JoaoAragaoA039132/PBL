@@ -81,12 +81,12 @@ copy running-config tftp:
 ------------------------
 
 	conf t
-	enable secret class
+	enable secret enablepbl
 	line console 0
-	password cisco
+	password consolepbl
 	login
 	line vty 0 4
-	password cisco
+	password vtypbl
 	login
 	transport input ssh telnet
 	exit
