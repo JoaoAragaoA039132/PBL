@@ -80,8 +80,7 @@ copy running-config tftp:
 
 ------------------------
 
-ROUTER:
-
+	conf t
 	enable secret class
 	line console 0
 	password cisco
